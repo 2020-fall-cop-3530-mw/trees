@@ -5,6 +5,8 @@ TEST_CASE ("Node test")
 {
 	Node<int> n(12);
 	CHECK (12 == n.GetValue());
+	n.SetValue(-4);
+	CHECK (-4 == n.GetValue());
 
 	// parent
 	Node<int>* p = new Node<int>(5);

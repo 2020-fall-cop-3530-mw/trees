@@ -17,6 +17,12 @@ T Node<T>::GetValue()
 }
 
 template <typename T>
+void Node<T>::SetValue(T newValue)
+{
+	this->value = newValue;
+}
+
+template <typename T>
 void Node<T>::SetParent (Node<T>* p)
 {
 	this->parent = p;

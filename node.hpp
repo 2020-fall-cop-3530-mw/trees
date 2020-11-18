@@ -11,7 +11,10 @@ class Node
 		Node<T>* right;
 	public:
 		Node (int);
+
 		T GetValue ();
+		void SetValue (T);
+
 		void SetParent (Node<T>* p);
 		Node<T>* GetParent ();
 
